@@ -1,0 +1,480 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+/**************************************
+Main container and positions
+**************************************/
+#container{
+	width:100%;
+	height: 100vh;
+	position: relative;
+	background: #ffffff; /* Old browsers */
+	/*background: -moz-linear-gradient(top,  #ffffff 0%, #e5e5e5 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); 
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); 
+	background: -o-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%);
+	background: -ms-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); 
+	background: linear-gradient(to bottom,  #ffffff 0%,#e5e5e5 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); 
+*/
+	border-bottom:#CCCCCC 2px solid;
+}
+
+/**************************************
+Header
+**************************************/
+@font-face {
+    font-family: exo;
+    src: url(Exo2-ExtraBoldItalic.ttf);
+}
+
+#header{
+	width:100%;
+	padding-top:30px;
+	
+	background: #ffffff; /* Old browsers */
+	/*background: -moz-linear-gradient(top,  #ffffff 0%, #e5e5e5 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); 
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); 
+	background: -o-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%);
+	background: -ms-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); 
+	background: linear-gradient(to bottom,  #ffffff 0%,#e5e5e5 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); 
+*/
+	border-bottom:#CCCCCC 2px solid;
+}
+
+#logo{
+	display:block;
+	text-align:center;
+}
+
+#title{
+	text-align:center;
+	font-family: exo;
+	font-size:6em;
+	color:#545454;
+	text-shadow: 1px 1px #000, -1px -1px #000;
+}
+
+#title span{
+	color:#EDD934;
+}
+
+/**************************************
+Tv, youtube positions
+**************************************/
+@media only screen and (min-width:1049px){
+	#wrapper-tv{
+		width:100%;
+		height: 78%;
+		margin:0px auto;
+		
+	}
+}
+
+#wrapper-tv{
+	position: relative;
+}
+.searchBox{
+	display: none;
+}
+
+.searchBox{
+	width:100%;
+	height: 100%;
+	
+}
+
+/**************************************
+Search form
+**************************************/
+#form-box{
+	width:100%;
+	position: relative;
+	margin-top: 100px;
+}
+
+.searchForm{
+	width:600px;
+	margin:0px auto;
+}
+
+#search{
+  width:350px;
+  height: 46px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+  box-shadow: 2px 2px 5px #888888;
+	float:left;
+}
+
+.menu-button{
+  height: 46px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  
+  border-radius: 6px;
+
+
+}
+
+#menuButton2{
+	padding: 5px 10px;
+  cursor: pointer;
+  background: #000;
+  color: white;
+  font-size: 20px;
+  float:right;
+  margin-top:20px;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+/**************************************
+Menu
+**************************************/
+#menu-container{
+	position: relative;
+	padding:10px;
+	padding-left:20px;
+	width:98%;
+	height: 250px;
+	
+	text-align:center;
+	float:left;
+
+	margin-top: 3%;
+}
+
+
+
+
+#menu-inner {
+float:left; /* important for inline positioning */
+width:80%; /* important (this width = width of list item(including margin) * items shown */ 
+
+background-color: gray;
+overflow: hidden;  /* important (hide the items outside the div) */
+/* non-important styling bellow */
+background: #F0F0F0;
+position: relative;
+margin-left:10%;
+}
+
+#menu-ul {
+position:relative;
+left:-280px; /* important (this should be negative number of list items width(including margin) */
+list-style-type: none; /* removing the default styling for unordered list items */
+margin: 0px;
+padding: 0px;
+width:9999px; /* important */
+/* non-important styling bellow */
+padding-bottom:10px;
+}
+
+#menu-ul li{
+float: left; /* important for inline positioning of the list items */                                    
+width:270px;  /* fixed width, important */
+/* just styling bellow*/
+padding:0px;
+cursor:pointer;
+
+margin-top:10px;
+margin-bottom:10px; 
+margin-left:5px; 
+margin-right:5px; 
+min-height: 242px;
+}
+
+#menu-ul li img {
+.margin-bottom:-4px; /* IE is making a 4px gap bellow an image inside of an anchor (<a href...>) so this is to fix that*/
+/* styling */
+width: 100%;
+height:200px;
+}
+
+#left_scroll, #right_scroll{
+float:left; 
+height:250px; 
+width:50px; 
+}
+#left_scroll img, #right_scroll img{
+/*styling*/
+cursor: pointer;
+cursor: hand;
+width: 100%;
+height: 100%;
+}
+
+#menuButton{
+	
+	float:right;
+	
+	
+}
+
+#searchButton{
+	margin-left:20px;
+	float: left;
+}
+
+.text-first{
+	position: relative;
+	top:60px;
+	font-family: Roboto, sans-serif;
+}
+.text-second{
+	position: relative;
+	top:60px;
+	font-family: Roboto, sans-serif;
+}
+
+.text-first h1, .text-second h1{
+	font-size: 2.8em;
+  	margin-bottom: 25px;
+	text-align: center;
+	color:#666;
+}
+
+#breathingTV-sub{
+	display: none;
+}
+
+#temp-player{
+	width:70%;
+	height:95%;
+	position: absolute;
+	border: 11px solid ;
+	top:0px;
+	margin-left: 15%;
+	margin-top: 10px;
+	z-index: 0;
+	border-radius: 20px;
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+     border-radius: 20px;
+
+}
+
+
+.bubbles{
+width: 200px;
+height: 50px;
+background-color: #EDD934;
+border-radius: 25px;
+position: fixed;
+margin-top:70px;
+padding: 10px;
+font-family: Roboto, sans-serif;
+font-size: 16px;
+line-height: 22px;
+color: #313333;
+text-align: center;
+display:none;
+}
+
+
+.bubbles:after{
+content: ' ';
+width: 0px;
+height: 0px;
+border-top: 15px solid transparent;
+border-left: 15px solid transparent;
+border-bottom:15px solid #EDD934;
+border-right:15px solid transparent;
+position: absolute;
+left: 50%;
+bottom: 100%;
+margin-left: -15px;
+}
+
+.turboBublle{
+	
+	width: 200px;
+	height: 60px;
+	background-color: #EDD934;
+	border-radius: 25px;
+	position: fixed;
+	margin-top:-120px;
+	padding: 10px;
+	font-family: Roboto, sans-serif;
+	font-size: 16px;
+	line-height: 22px;
+	color: #313333;
+	text-align: center;
+	display:none;
+}
+
+.turboBublle:after{
+content: ' ';
+width: 0px;
+height: 0px;
+border-top: 15px solid #EDD934;
+border-left: 15px solid transparent;
+border-bottom:15px solid transparent;
+border-right:15px solid transparent;
+position: absolute;
+left: 50%;
+top: 100%;
+margin-left: -15px;
+}
+	
+/**************************************
+Media Query
+**************************************/
+@media screen and (max-width:800px){
+
+	#header{
+		height: 15%;
+		margin-bottom:5%;
+	}
+
+	#wrapper-tv{
+		width:100%;
+		height: 78%;
+		margin:0px auto;
+		
+	}
+
+	#temp-player{
+		width: 98%;
+		height:80%;
+		margin-left: 0px;
+	}
+
+	#fullScr{
+		display:none !important;
+	}
+
+	#turboButton{
+		right:20px !important;
+		bottom:30px;
+	}
+
+	#countNum{
+		height: 20px;
+		bottom:0px !important;
+		padding: 5px;
+		left:35% !important;
+	}
+	
+	#roundBut{
+		height: 20px;
+		bottom:0px;
+		padding: 5px;
+		left:10px !important;
+	}
+
+	#breathingTV-sub{
+		width:98% !important;
+		height:65% !important;
+		position: relative;
+		/*background:url('../images/cinema.jpg') no-repeat;*/
+		background-size:100% 100%;
+		margin:20px auto;
+	}
+}
+
+@media screen and (max-width:1280px) and (max-height:800px){
+	#header{
+		height: 15%;
+	}
+
+	#wrapper-tv{
+		width:100%;
+		height: 78%;
+		margin:0px auto;
+		
+	}
+
+	#temp-player{
+		width: 98%;
+		height:80%;
+		margin-left: 0px;
+	}
+
+	.explanation{
+		top:60% !important;
+		left:20% !important;
+	}
+
+	#breathingTV-sub{
+		width:98% !important;
+		height:85% !important;
+		position: relative;
+		/*background:url('../images/cinema.jpg') no-repeat;*/
+		background-size:100% 100%;
+		margin:20px auto;
+	}
+	#countNum{
+		height: 20px;
+		top:20px;
+		padding: 5px;
+		background: #666 !important;
+	}
+	
+	#roundBut{
+		height: 20px;
+		top:20px;
+		padding: 5px;
+		
+	}
+
+	#fullScr{
+		display:none !important;
+	}
+
+	#turboButton{
+		right:0px !important;
+	}
+}
+
+
+/**************************************
+Clearfix
+**************************************/
+.clear{clear:both;}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+.clearfix {
+    display: inline-block;
+}
+html[xmlns] .clearfix {
+    display: block;
+}
+* html .clearfix {
+    height: 1%;
+}
